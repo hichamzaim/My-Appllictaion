@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Sign In Now"
-        android:textColor="@color/black"
+        android:textColor="@color/green"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +40,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
+        android:id="@+id/tvEmailRegister"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/input_background"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="15dp"
+        android:drawableTintMode="src_in"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsernameLogin" />
+
+    <EditText
         android:id="@+id/tvUsernameLogin"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -51,7 +72,7 @@
         android:drawablePadding="15dp"
         android:drawableTintMode="src_in"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -81,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUsernameLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailRegister" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -100,8 +121,7 @@
             android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Remember me"
+            android:text="I agree to the "
             android:textColor="@color/grayDark"
             android:theme="@style/colored_checkBox" />
 
@@ -110,9 +130,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="right"
-            android:text="Forgot Password?"
-            android:textColor="@color/grayDark" />
+            android:gravity="left"
+            android:text="Terms and Conditions"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <Button
