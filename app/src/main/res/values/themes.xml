@@ -4,6 +4,12 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+
+    <style name="colored_checkBox" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/green</item> <!-- for uncheck state -->
+        <item name="android:textColorSecondary">@color/green</item> <!-- for check state -->
+    </style>
+
 </resources>
