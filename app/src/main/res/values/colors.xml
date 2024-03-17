@@ -6,4 +6,8 @@
     <color name="coral">#FEB789</color>
     <color name="grayDark">#797979</color>
     <color name="grayLight">#f6f6f6</color>
+    <color name="success">#0aa350</color>
+    <color name="failure">#ec0019</color>
+    <color name="lightgrayCalc">#dddddd</color>
+    <color name="darkgrayCalc">#cccccc</color>
 </resources>

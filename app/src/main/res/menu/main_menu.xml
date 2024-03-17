@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/profile_icon"/>
+
+        <item
+            android:id="@+id/calculator"
+            android:title="Calculator"
+            android:icon="@drawable/calculator_icon"/>
+
+        <item
+            android:id="@+id/temperature"
+            android:title="Temperature"
+            android:icon="@drawable/temperature_icon"/>
+    </group>
+
+
+        <item android:title="Account">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/logout"
+                        android:title="Log out"
+                        android:icon="@drawable/logout_icon"/>
+                </group>
+            </menu>
+        </item>
+
+
+
+
+        <item android:title="Communicate">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/share"
+                    android:title="Share"
+                    android:icon="@drawable/share_icon"/>
+
+                <item
+                    android:id="@+id/rateUs"
+                    android:title="Rate Us"
+                    android:icon="@drawable/rate_icon"/>
+                </group>
+            </menu>
+        </item>
+
+
+
+</menu>
